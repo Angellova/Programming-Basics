@@ -1,0 +1,315 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Metric_Converter2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var numToConvert = double.Parse(Console.ReadLine());
+            var fromMetric = Console.ReadLine();
+            var toMetric = Console.ReadLine();
+
+            double result = 0;
+
+            if (fromMetric == "mm")
+            {
+                if (toMetric == "cm")
+                {
+                    result = numToConvert * 0.01;
+                }
+                else if (toMetric == "m")
+                {
+                    result = numToConvert * 0.001;
+                }
+                else if (toMetric == "km")
+                {
+                    result = numToConvert * 0.0000010000;
+                }
+                else if (toMetric == "in")
+                {
+                    result = numToConvert * 0.039370;
+                }
+                else if (toMetric == "mi")
+                {
+                    result = (numToConvert * 0.001) * 0.00062;
+                }
+                else if (toMetric == "ft")
+                {
+                    result = numToConvert * 0.00328;
+                }
+                else if (toMetric == "yd")
+                {
+                    result = numToConvert * 0.00109;
+                }
+                else if (toMetric == "mm")
+                {
+                    result = numToConvert * 1;
+                }
+
+            }
+
+            if (fromMetric == "cm")
+            {
+                if (toMetric == "mm")
+                {
+                    result = numToConvert * 10;
+                }
+                else if (toMetric == "m")
+                {
+                    result = numToConvert * 0.01;
+                }
+                else if (toMetric == "mi")
+                {
+                    result = numToConvert * 0.00001;
+                }
+                else if (toMetric == "in")
+                {
+                    result = numToConvert * 0.3937;
+                }
+                else if (toMetric == "km")
+                {
+                    result = numToConvert * 0.00001;
+                }
+                else if (toMetric == "ft")
+                {
+                    result = numToConvert * 0.03281;
+                }
+                else if (toMetric == "yd")
+                {
+                    result = numToConvert * 0.01094;
+                }
+                else if (toMetric == "cm")
+                {
+                    result = numToConvert * 1;
+                }
+            }
+            
+            if (fromMetric == "m")
+            {
+                if (toMetric == "mm")
+                {
+                    result = numToConvert * 1000;
+                }
+                else if (toMetric == "cm")
+                {
+                    result = numToConvert * 100;
+                }
+                else if (toMetric == "mi")
+                {
+                    result = numToConvert * 0.000621;
+                }
+                else if (toMetric == "in")
+                {
+                    result = numToConvert * 39.370079;
+                }
+                else if (toMetric == "km")
+                {
+                    result = numToConvert * 0.001;
+                }
+                else if (toMetric == "ft")
+                {
+                    result = numToConvert * 3.28084;
+                }
+                else if (toMetric == "yd")
+                {
+                    result = numToConvert * 1.093613;
+                }
+                else if (toMetric == "m")
+                {
+                    result = numToConvert * 1;
+                }
+            }
+
+            if (fromMetric == "km")
+            {
+                if (toMetric == "mm")
+                {
+                    result = numToConvert * 1000000;
+                }
+                else if (toMetric == "cm")
+                {
+                    result = numToConvert * 100000;
+                }
+                else if (toMetric == "mi")
+                {
+                    result = numToConvert * 0.621371;
+                }
+                else if (toMetric == "in")
+                {
+                    result = numToConvert * 39370.07874;
+                }
+                else if (toMetric == "m")
+                {
+                    result = numToConvert * 1000;
+                }
+                else if (toMetric == "ft")
+                {
+                    result = numToConvert * 3280.839895;
+                }
+                else if (toMetric == "yd")
+                {
+                    result = numToConvert * 1093.613298;
+                }
+                else if (toMetric == "km")
+                {
+                    result = numToConvert * 1;
+                }
+            }
+
+            if (fromMetric == "mi")
+            {
+                if (toMetric == "mm")
+                {
+                    result = numToConvert * 1609344;
+                }
+                else if (toMetric == "cm")
+                {
+                    result = numToConvert * 160934.4;
+                }
+                else if (toMetric == "m")
+                {
+                    result = numToConvert * 1609.344;
+                }
+                else if (toMetric == "yd")
+                {
+                    result = numToConvert * 1760;
+                }
+                else if (toMetric == "km")
+                {
+                    result = numToConvert * 1.609344;
+                }
+                else if (toMetric == "in")
+                {
+                    result = numToConvert * 63360;
+                }
+                else if (toMetric == "ft")
+                {
+                    result = numToConvert * 5280;
+                }
+                else if (toMetric == "mi")
+                {
+                    result = numToConvert * 1;
+                }
+            }
+
+            if (fromMetric == "in")
+            {
+                if (toMetric == "cm")
+                {
+                    result = numToConvert * 2.54;
+                }
+                else if (toMetric == "m")
+                {
+                    result = numToConvert * 0.0254;
+                }
+                else if (toMetric == "km")
+                {
+                    result = numToConvert * 0.000025;
+                }
+                else if (toMetric == "mi")
+                {
+                    result = numToConvert * 0.000016;
+                }
+                else if (toMetric == "ft")
+                {
+                    result = (numToConvert * 0.001) * 0.083333;
+                }
+                else if (toMetric == "mm")
+                {
+                    result = numToConvert * 25.4;
+                }
+                else if (toMetric == "yd")
+                {
+                    result = numToConvert * 0.027778;
+                }
+                else if (toMetric == "in")
+                {
+                    result = numToConvert * 1;
+                }
+            }
+            
+            if (fromMetric == "ft")
+            {
+                if (toMetric == "cm")
+                {
+                    result = numToConvert * 30.48;
+                }
+                else if (toMetric == "m")
+                {
+                    result = numToConvert * 0.3048;
+                }
+                else if (toMetric == "km")
+                {
+                    result = numToConvert * 0.000305;
+                }
+                else if (toMetric == "in")
+                {
+                    result = numToConvert * 12;
+                }
+                else if (toMetric == "mi")
+                {
+                    result = (numToConvert * 0.001) * 0.000189;
+                }
+                else if (toMetric == "mm")
+                {
+                    result = numToConvert * 304.8;
+                }
+                else if (toMetric == "yd")
+                {
+                    result = numToConvert * 0.333333;
+                }
+                else if (toMetric == "ft")
+                {
+                    result = numToConvert * 1;
+                }
+            }
+            
+            if (fromMetric == "yd")
+            {
+
+                if (toMetric == "mm")
+                {
+                    result = numToConvert * 914.4;
+                }
+                else if (toMetric == "cm")
+                {
+                    result = numToConvert * 91.44;
+                }
+                else if (toMetric == "m")
+                {
+                    result = numToConvert * 0.9144;
+                }
+                else if (toMetric == "km")
+                {
+                    result = numToConvert * 0.00091;
+                }
+                else if (toMetric == "mi")
+                {
+                    result = numToConvert * 0.00057;
+                }
+                else if (toMetric == "in")
+                {
+                    result = numToConvert * 36;
+                }
+                else if (toMetric == "ft")
+                {
+                    result = numToConvert * 3;
+                }
+                else if (toMetric == "yd")
+                {
+                    result = numToConvert * 1;
+                }
+
+            }
+
+            Console.WriteLine(result);
+        }
+    }
+}
+
+
