@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sum_Seconds
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var fistNum = double.Parse(Console.ReadLine());
+            var secondNum = double.Parse(Console.ReadLine());
+            var thirdNum = double.Parse(Console.ReadLine());
+
+            var seconds = (fistNum + secondNum + thirdNum);
+            var minutes = 0;
+
+            if (seconds >= 60 && seconds < 120)
+            {
+                minutes = 1;
+                seconds = seconds - 60;
+            }
+            else if(seconds >= 120)
+            {
+                minutes = 2;
+                seconds = seconds - 120;
+            }
+            if (seconds < 10)
+            {
+                Console.WriteLine(minutes + ":0" + seconds);
+            }
+            else
+            {
+                Console.WriteLine(minutes + ":" + seconds);
+            }
+            
+        }
+    }
+}
