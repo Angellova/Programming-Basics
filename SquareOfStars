@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var n = int.Parse(Console.ReadLine());
+            string a = "";
+            for (int i = 1; i <= n; i += 1)
+            {
+                a = a + "*";
+            }
+            Console.WriteLine(a);
+            for (int j = 2; j <= n - 1; j += 1)
+            {
+                Console.Write("*");
+                for (int b = 1; b <= n - 2; b += 1)
+                {
+                    Console.Write(" ");
+                }
+                Console.WriteLine("*");
+            }
+            Console.WriteLine(a);
+        }
+    }
+}
