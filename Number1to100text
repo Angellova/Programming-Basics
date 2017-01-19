@@ -1,0 +1,72 @@
+using System;
+
+namespace Nums1to100text
+{
+    class Nums1to100toText
+    {
+        static void Main(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine());
+
+            if (number >= 0 && number <= 100)  
+            {
+               
+                {
+                    case 0: Console.WriteLine("zero"); break;
+                    case 10: Console.WriteLine("ten"); break;
+                    case 11: Console.WriteLine("eleven"); break;
+                    case 12: Console.WriteLine("twelve"); break;
+                    case 13: Console.WriteLine("thirteen"); break;
+                    case 14: Console.WriteLine("fourteen"); break;
+                    case 15: Console.WriteLine("fifteen"); break;
+                    case 16: Console.WriteLine("sixteen"); break;
+                    case 17: Console.WriteLine("seventeen"); break;
+                    case 18: Console.WriteLine("eighteen"); break;
+                    case 19: Console.WriteLine("nineteen"); break;
+                    case 100: Console.WriteLine("one hundred"); break;
+                    default: break;
+                }
+                
+                string[] tens = { null, null, "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety" };
+                string[] ones = { null, "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+                if (number > 0 && number < 10) 
+                {
+                    for (int i = 1; i <= ones.Length; i++) 
+                    {
+                        if (number == i)
+                        {
+                            Console.WriteLine(ones[i]);
+                        }
+                    }
+                }
+                
+                if (number > 19 && number < 100)
+                {
+                    int firstNum = number / 10;     
+                    int secondNum = number % 10;   
+                    
+                    for (int i = 1; i <= tens.Length; i++) 
+                    
+                        if (firstNum == i)
+                        {
+                            Console.Write(tens[i]);
+                        }
+                    }
+                    for (int i = 1; i <= ones.Length; i++)  
+                    {
+                        if (secondNum == i)
+                        {
+                            Console.WriteLine(" " + ones[i]);
+                        }
+                    }
+                }
+            }
+            
+            else
+            {
+                Console.WriteLine("invalid number");  
+            }
+        }
+    }
+}
